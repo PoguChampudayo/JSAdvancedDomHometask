@@ -1,0 +1,16 @@
+body {
+    color: #999;
+}
+
+.rowTable {
+  width: 408px;
+  display: flex;
+}
+
+.cellTable {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: lightgray;
+  border: solid 1px black;
+}
