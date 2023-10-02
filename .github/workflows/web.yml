@@ -1,4 +1,4 @@
-name: Netology AHJ
+name: DOMHometask
 
 on: [push, pull_request]
 
