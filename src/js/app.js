@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const goblin = document.createElement("div");
   goblin.className = "goblin";
+  let newPlace
   setTimeout(() => {
     // if (document.querySelector(".goblin")) {
     //   let currentPlace = document.querySelector(".goblin").parentNode.id;
@@ -14,9 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
     // } else {
     //   document.querySelectorAll(".cellTable")[Math.round(Math.random() * 15)].appendChild(goblin);
     // }
-    let newPlace = Math.floor(Math.random() * 15);
+    newPlace = Math.floor(Math.random() * 15);
     document.querySelectorAll(".cellTable")[newPlace].appendChild(goblin);
     console.log("countdown!");
-  }, 2000);
+  }, 1000);
   return true;
 });
