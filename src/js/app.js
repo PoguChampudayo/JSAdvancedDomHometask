@@ -1,14 +1,25 @@
+function getRandomInt(max, min, outNumber) {
+  let result = Math.floor(Math.random() * (max - min) + min)
+  if (result == outNumber) {
+    return getRandomInt(max, min, outNumber)
+  }
+  else {
+    return result
+  }
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   const goblin = document.createElement("div");
   goblin.className = "goblin";
-  let newPlace;
+  // let newPlace;
   setInterval(() => {
     if (document.querySelector(".goblin")) {
       let currentPlace = Number(document.querySelector(".goblin").parentNode.id);
-      do {
-        newPlace = Math.floor(Math.random() * 15);
-        console.log(newPlace, currentPlace);
-      } while (newPlace = currentPlace);
+      let newPlace = getRandomInt(15, 0, currentPlace)
+      // do {
+      //   newPlace = Math.floor(Math.random() * 15);
+      //   console.log(newPlace, currentPlace);
+      // } while (newPlace = currentPlace);
       // newPlace = Math.floor(Math.random() * 15);
       console.log(newPlace, currentPlace);
       document.querySelector(".goblin").remove();
