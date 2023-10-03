@@ -1,25 +1,3 @@
-
-chrome.runtime.onMessage.addListener(function (
-  request,
-  sender,
-  sendResponse,
-) {
-  if (request.contentScriptQuery == 'queryPrice') {
-    const url =
-      'https://example.com/price-query?itemId=' +
-      encodeURIComponent(request.itemId);
-
-    fetch(url).then(response => {
-      // ...
-      sendResponse({message: true});
-    });
-
-    // 👇️ use `return true` here
-    return true; // Will respond asynchronously.
-  }
-});
-
-
 document.addEventListener("DOMContentLoaded", () => {
   const goblin = document.createElement("div");
   goblin.className = "goblin";
@@ -38,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // }
     let newPlace = Math.floor(Math.random() * 15);
     document.querySelectorAll(".cellTable")[newPlace].appendChild(goblin);
-    console.log('countdown!')
+    console.log("countdown!");
   }, 2000);
+  return true;
 });
-
