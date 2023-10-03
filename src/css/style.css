@@ -3,20 +3,20 @@ body {
 }
 
 .rowTable {
-  width: 408px;
+  width: 488px;
   display: flex;
 }
 
 .cellTable {
   display: block;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
   background-color: lightgray;
   border: solid 1px black;
 }
 
 .goblin {
-    width: 100px; 
-    height: 100px; 
+    width: 120px; 
+    height: 120px; 
     background-image: url("../img/goblin.png")
 }
