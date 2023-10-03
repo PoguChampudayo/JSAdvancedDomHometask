@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let newPlace;
   setInterval(() => {
     if (document.querySelector(".goblin")) {
-      let currentPlace = document.querySelector(".goblin").parentNode.id;
+      let currentPlace = Number(document.querySelector(".goblin").parentNode.id);
       let newPlace;
       do {
         newPlace = Math.floor(Math.random() * 15);
