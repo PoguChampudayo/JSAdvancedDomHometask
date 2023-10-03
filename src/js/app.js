@@ -5,11 +5,11 @@ document.addEventListener("DOMContentLoaded", () => {
   setInterval(() => {
     if (document.querySelector(".goblin")) {
       let currentPlace = Number(document.querySelector(".goblin").parentNode.id);
-      // do {
-      //   newPlace = Math.floor(Math.random() * 15);
-      //   console.log(newPlace, currentPlace);
-      // } while (newPlace = currentPlace);
-      newPlace = Math.floor(Math.random() * 15);
+      do {
+        newPlace = Math.floor(Math.random() * 15);
+        console.log(newPlace, currentPlace);
+      } while (newPlace = currentPlace);
+      // newPlace = Math.floor(Math.random() * 15);
       console.log(newPlace, currentPlace);
       document.querySelector(".goblin").remove();
       document.querySelectorAll(".cellTable")[newPlace].appendChild(goblin);
