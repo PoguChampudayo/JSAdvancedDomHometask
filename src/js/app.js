@@ -4,13 +4,12 @@ document.addEventListener("DOMContentLoaded", () => {
   let newPlace;
   setInterval(() => {
     if (document.querySelector(".goblin")) {
-      let currentPlace = Number(
-        document.querySelector(".goblin").parentNode.id
-      );
-      do {
-        newPlace = Math.floor(Math.random() * 15);
-        console.log(newPlace, currentPlace);
-      } while (newPlace != currentPlace);
+      let currentPlace = Number(document.querySelector(".goblin").parentNode.id);
+      // do {
+      //   newPlace = Math.floor(Math.random() * 15);
+      //   console.log(newPlace, currentPlace);
+      // } while (newPlace != currentPlace);
+      newPlace = Math.floor(Math.random() * 15);
       document.querySelector(".goblin").remove();
       document.querySelectorAll(".cellTable")[newPlace].appendChild(goblin);
     } else {
