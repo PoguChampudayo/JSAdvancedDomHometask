@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
       do {
         newPlace = Math.floor(Math.random() * 15);
         console.log(newPlace, currentPlace)
-      } while (newPlace != currentPlace);
+      } while (newPlace = currentPlace);
       document.querySelector(".goblin").remove();
       document.querySelectorAll(".cellTable")[newPlace].appendChild(goblin);
     } else {
