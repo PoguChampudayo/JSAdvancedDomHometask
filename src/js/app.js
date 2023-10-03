@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const goblin = document.createElement("div");
   goblin.className = "goblin";
-  goblin.style.cssText =
-    'width: 100px; height: 100px; background-image: url("../img/goblin.png")';
   setTimeout(() => {
     if (document.querySelector(".goblin")) {
       let currentPlace = document.querySelector(".goblin").parentNode.id;

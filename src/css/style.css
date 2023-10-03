@@ -14,3 +14,9 @@ body {
   background-color: lightgray;
   border: solid 1px black;
 }
+
+.goblin {
+    width: 100px; 
+    height: 100px; 
+    background-image: url("../img/goblin.png")
+}
